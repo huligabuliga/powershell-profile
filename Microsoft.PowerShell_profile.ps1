@@ -290,12 +290,13 @@ else {
     }
 }
 
-## Runs neofetch 
-# Check if neofetch command exists
-if (Get-Command neofetch -ErrorAction SilentlyContinue) {
-    # Run neofetch
-    neofetch
+## Runs fastfetch 
+# Check if fastfetch command exists
+if (Get-Command fastfetch -ErrorAction SilentlyContinue) {
+    # Run fastfetch
+    fastfetch
 }
 else {
-    Write-Host "neofetch command not found. Please install neofetch."
+    Write-Host "fastfetch command not found. Please install fastfetch."
 }
+
